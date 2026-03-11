@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from tester.runner import run_tests
 from storage import init_db, save_run, list_runs
-
+DB = "/home/oceaquatique/project/runs.db"
 app = Flask(__name__)
 
 init_db()
