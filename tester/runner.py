@@ -36,7 +36,8 @@ def run_tests():
         results.append({
             "name": name,
             "status": status,
-            "latency_ms": latency
+            "latency_ms": latency,
+            "details": details
         })
 
     passed = len([r for r in results if r["status"] == "PASS"])
