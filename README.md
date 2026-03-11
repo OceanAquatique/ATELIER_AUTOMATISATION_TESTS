@@ -61,31 +61,6 @@ Difficulté : Moyenne (~120 minutes)
 ---------------------------------------------------
 **Consignes : Retrouvez les consignes de votre atelier sur votre site pythonanywhere**    
 Vous pouvez retrouver le travail demandé dans le cadre de cet atelier directement sur votre site pythonanywhere (ex: monuser.pythonanywhere.com). 
-
-# API Choice
-
-- Étudiant : Océane Goncalves
-- API choisie : Coffee API
-- URL base : https://coffee.alexflipnote.dev
-- Documentation officielle / README : https://coffee.alexflipnote.dev/ ; https://github.com/AlexFlipnote/CoffeeAPI
-- Auth : None
-- Endpoints testés :
-  - GET /random.json
-  - GET /random
-- Hypothèses de contrat (champs attendus, types, codes) :
-  - GET /random.json retourne HTTP 200
-  - Content-Type attendu : application/json
-  - Le JSON contient au moins un champ `file`
-  - `file` est une chaîne de caractères
-  - `file` contient une URL HTTP/HTTPS valide pointant vers une image
-  - GET /random retourne une ressource image accessible
-- Limites / rate limiting connu :
-  - Non documenté clairement, donc charge limitée volontairement côté projet
-- Risques (instabilité, downtime, CORS, etc.) :
-  - API publique non garantie
-  - indisponibilité temporaire possible
-  - format JSON pouvant évoluer
-  - latence variable
    
 --------------------------------------------------------------------
 🧠 Troubleshooting :
