@@ -14,16 +14,13 @@ def consignes():
 
 @app.route("/run")
 def run():
-
     result = run_tests()
     save_run(result)
-
     return result
 
 
 @app.route("/dashboard")
 def dashboard():
-
     runs = list_runs()
     return render_template(
         "dashboard.html",
