@@ -1,13 +1,24 @@
 # API Choice
 
-- Étudiant :
-- API choisie :
-- URL base :
-- Documentation officielle / README :
-- Auth : None / API Key / OAuth
+- Étudiant : Océane Goncalves
+- API choisie : Coffee API
+- URL base : https://coffee.alexflipnote.dev
+- Documentation officielle / README : https://coffee.alexflipnote.dev/ ; https://github.com/AlexFlipnote/CoffeeAPI
+- Auth : None
 - Endpoints testés :
-  - GET ...
-  - GET ...
+  - GET /random.json
+  - GET /random
 - Hypothèses de contrat (champs attendus, types, codes) :
+  - GET /random.json retourne HTTP 200
+  - Content-Type attendu : application/json
+  - Le JSON contient au moins un champ `file`
+  - `file` est une chaîne de caractères
+  - `file` contient une URL HTTP/HTTPS valide pointant vers une image
+  - GET /random retourne une ressource image accessible
 - Limites / rate limiting connu :
+  - Non documenté clairement, donc charge limitée volontairement côté projet
 - Risques (instabilité, downtime, CORS, etc.) :
+  - API publique non garantie
+  - indisponibilité temporaire possible
+  - format JSON pouvant évoluer
+  - latence variable
