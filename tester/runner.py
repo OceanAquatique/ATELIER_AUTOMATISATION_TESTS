@@ -24,9 +24,11 @@ def run_tests():
         try:
             test()
             status = "PASS"
+            details = ""
 
         except Exception as e:
             status = "FAIL"
+            details = str(e)
 
         latency = (time.time() - start) * 1000
         latencies.append(latency)
@@ -53,6 +55,7 @@ def run_tests():
         },
         "tests": results
     }
+
 
 if __name__ == "__main__":
     print(run_tests())
