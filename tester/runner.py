@@ -53,3 +53,6 @@ def run_tests():
         },
         "tests": results
     }
+
+if __name__ == "__main__":
+    print(run_tests())
