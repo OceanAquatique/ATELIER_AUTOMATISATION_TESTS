@@ -7,6 +7,11 @@ app = Flask(__name__)
 init_db()
 
 
+@app.get("/")
+def consignes():
+     return render_template('consignes.html')
+
+
 @app.route("/run")
 def run():
 
